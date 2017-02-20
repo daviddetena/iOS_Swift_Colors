@@ -28,38 +28,10 @@
                                     <constraint firstAttribute="width" constant="271" id="8ty-e7-Ga0"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXC-6y-M0s">
-                                <rect key="frame" x="106" y="28" width="162" height="105"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="jKQ-Ps-DQn"/>
-                                    <constraint firstAttribute="width" constant="162" id="xqS-jP-j5a"/>
-                                </constraints>
-                                <state key="normal" image="img_switch_off"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_knob_base" translatesAutoresizingMaskIntoConstraints="NO" id="YQy-Pz-SGr">
-                                <rect key="frame" x="99" y="411" width="176" height="176"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="176" id="Oe7-Em-2hp"/>
-                                    <constraint firstAttribute="height" constant="176" id="fdO-5j-K6z"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_knob" translatesAutoresizingMaskIntoConstraints="NO" id="865-7B-iqg">
-                                <rect key="frame" x="109" y="421" width="156" height="156"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="156" id="WRa-n2-l05"/>
-                                    <constraint firstAttribute="width" constant="156" id="ZHD-QR-n2S"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7k8-or-zOj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="135" id="Fh2-nm-Pgh"/>
-                            <constraint firstItem="7k8-or-zOj" firstAttribute="top" secondItem="yXC-6y-M0s" secondAttribute="bottom" constant="22" id="QBc-fy-ZAa"/>
-                            <constraint firstItem="YQy-Pz-SGr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UHx-xx-GCo"/>
-                            <constraint firstItem="yXC-6y-M0s" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dfL-rt-pzD"/>
-                            <constraint firstItem="865-7B-iqg" firstAttribute="centerX" secondItem="YQy-Pz-SGr" secondAttribute="centerX" id="mTI-BL-ASl"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="YQy-Pz-SGr" secondAttribute="bottom" constant="80" id="prR-fg-sG2"/>
-                            <constraint firstItem="865-7B-iqg" firstAttribute="centerY" secondItem="YQy-Pz-SGr" secondAttribute="centerY" id="qEX-TW-ZKW"/>
                             <constraint firstItem="7k8-or-zOj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sum-4Z-q8g"/>
                         </constraints>
                     </view>
@@ -70,9 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="img_knob" width="156" height="156"/>
-        <image name="img_knob_base" width="176" height="176"/>
-        <image name="img_switch_off" width="162" height="105"/>
         <image name="img_txt_colores" width="271" height="44"/>
     </resources>
 </document>
