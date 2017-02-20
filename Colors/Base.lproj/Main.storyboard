@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_txt_colores" translatesAutoresizingMaskIntoConstraints="NO" id="r2S-DF-bVU">
+                                <rect key="frame" x="52" y="155" width="271" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mzK-Hm-UDf"/>
+                                    <constraint firstAttribute="width" constant="271" id="n1z-bq-heb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8v-SI-LbL">
+                                <rect key="frame" x="106" y="36" width="162" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="MTb-Xh-NUm"/>
+                                    <constraint firstAttribute="width" constant="162" id="enk-uO-8nw"/>
+                                </constraints>
+                                <state key="normal" image="img_switch_off"/>
+                                <connections>
+                                    <action selector="btnSwitchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Vn-ZT-Bzm"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_knob_base" translatesAutoresizingMaskIntoConstraints="NO" id="JCH-fJ-rQp">
+                                <rect key="frame" x="99" y="411" width="176" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="176" id="1B2-AV-txz"/>
+                                    <constraint firstAttribute="width" constant="176" id="1vw-FS-jwN"/>
+                                    <constraint firstAttribute="height" constant="176" id="Ee5-FJ-YGq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="176" id="Lyl-FB-zVu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_knob" translatesAutoresizingMaskIntoConstraints="NO" id="mqy-Ex-Gv1">
+                                <rect key="frame" x="109" y="421" width="156" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="TR6-C4-ddG"/>
+                                    <constraint firstAttribute="height" constant="156" id="p2U-37-wWU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="156" id="u04-py-0ew"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="zwJ-Og-w0s"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f8v-SI-LbL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3rK-yT-COb"/>
+                            <constraint firstItem="r2S-DF-bVU" firstAttribute="top" secondItem="f8v-SI-LbL" secondAttribute="bottom" constant="14" id="8Gm-0p-5Ac"/>
+                            <constraint firstItem="r2S-DF-bVU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="135" id="98F-hN-DeY"/>
+                            <constraint firstItem="JCH-fJ-rQp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IMS-GU-n5X"/>
+                            <constraint firstItem="mqy-Ex-Gv1" firstAttribute="centerY" secondItem="JCH-fJ-rQp" secondAttribute="centerY" id="QR5-Of-yUV"/>
+                            <constraint firstItem="mqy-Ex-Gv1" firstAttribute="centerX" secondItem="JCH-fJ-rQp" secondAttribute="centerX" id="VrR-1d-Kks"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JCH-fJ-rQp" secondAttribute="bottom" constant="80" id="cau-du-xff"/>
+                            <constraint firstItem="r2S-DF-bVU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vKA-1L-c0c"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSwitch" destination="f8v-SI-LbL" id="SNt-7M-tIJ"/>
+                        <outlet property="imgKnob" destination="mqy-Ex-Gv1" id="r7N-UO-w3r"/>
+                        <outlet property="imgKnobBase" destination="JCH-fJ-rQp" id="fQq-41-hII"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="img_knob" width="156" height="156"/>
+        <image name="img_knob_base" width="176" height="176"/>
+        <image name="img_switch_off" width="162" height="105"/>
+        <image name="img_txt_colores" width="271" height="44"/>
+    </resources>
 </document>

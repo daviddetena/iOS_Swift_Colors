@@ -300,6 +300,7 @@
 				594927711E5A5BC300BB281B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
